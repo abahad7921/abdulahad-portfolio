@@ -94,6 +94,14 @@ body {
   margin: auto;
 }
 
+.hero .hero-img-1 {
+  max-width: 50%;
+  width: 250px;
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
 .section {
   padding: 2rem;
 }
