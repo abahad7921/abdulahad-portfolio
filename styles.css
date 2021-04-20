@@ -72,6 +72,10 @@ body {
   color: var(--primary-color);
 }
 
+.hero {
+  padding: 2rem;
+}
+
 .hero .hero-text {
   text-align: center;
   display: block;
