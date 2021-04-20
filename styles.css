@@ -103,3 +103,10 @@ body {
   padding: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
+.blog-heading {
+  font-size: large;
+  font-weight: bold;
+  display: block;
+  color: var(--primary-color);
+}
