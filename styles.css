@@ -148,6 +148,7 @@ body {
   font-weight: bold;
   display: block;
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .blog-page-heading {
