@@ -54,7 +54,14 @@ skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
 
+const skillData = document.querySelectorAll('.skills__data');
 
+skillData.forEach(skill => {
+  const numberElement = skill.querySelector('.skills__number'); // Select the number element
+  const progressElement = skill.querySelector('.skills__percentage'); // Select the progress bar
+  const percentage = parseInt(numberElement.textContent); // Extract the number value as an integer
+  progressElement.style.width = percentage + '%'; // Set the width of the progress bar
+});
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
@@ -183,3 +190,17 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+function downloadFile() {    
+    const fileUrl = './assets/Abdul_Ahad_Resume.pdf';
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.targt = '_blank';
+    link.download = 'Abdul Ahad';
+
+     // Append the link to the body (safe for compatibility)
+     document.body.appendChild(link);
+
+     // Trigger the click event
+     link.click();
+}
