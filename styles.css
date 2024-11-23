@@ -1209,3 +1209,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: block;
+  margin-top: 5px;
+}
