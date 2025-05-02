@@ -196,7 +196,7 @@ function downloadFile() {
     const link = document.createElement('a');
     link.href = fileUrl;
     link.targt = '_blank';
-    link.download = 'Abdul Ahad';
+    link.download = 'Abdul Ahad Resume';
 
      // Append the link to the body (safe for compatibility)
      document.body.appendChild(link);
